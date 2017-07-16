@@ -1,2 +1,2 @@
-# get-rekt.github.io
-Get secure or get-rekt. Generate private, secure passwords.
+# get-rekt
+Generate private, secure passwords. Get secure or get-rekt.
