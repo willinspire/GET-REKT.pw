@@ -5,7 +5,7 @@
     <title>GET-REKT</title>
     <!-- ****** META CONFIGURATIONS ****** -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="The advanced password generator">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,8 +32,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="http://get-rekt.pw/assets/media/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-	
-	<!-- Add to homescreen for Chrome on Android -->
+
+    <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" sizes="192x192" href="/images/android-icon-192x192.png">
 
@@ -47,31 +47,38 @@
     <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-	<link rel="shortcut icon" href="/images/favicon.png">
+    <link rel="shortcut icon" href="/images/favicon.png">
 
     <!-- ****** STYLE ****** -->
     <link href="http://get-rekt.pw/assets/css/rekt.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+
     <!-- ****** JAVASCRIPT ****** -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	<script src="http://get-rekt.pw/assets/js/rekt.js" language="javascript" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="http://get-rekt.pw/assets/js/rekt.js" language="javascript" type="text/javascript"></script>
 </head>
 
 <body onload="OpenOptions();">
-    <div class="container">
-        <div id="header">
-            <div id="Logo">
-                <img src="http://get-rekt.pw/assets/media/apple-icon-57x57.png" border="0" />
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div id="Logo"><img src="http://get-rekt.pw/assets/media/apple-icon-57x57.png" border="0" /></div>
+            <div id="LogoText">
+                <h1 class="display-3">GET-REKT</h1>
             </div>
-            <div id="LogoText">GET-REKT</div>
+            <p class="lead">The advanced password generator, built to empower the new age of cryptography.</p>
         </div>
-        <div id="sec_options">
-            <div class="chboxl">Password Length:</div>
-            <div class="chboxr">
-                <select id="pgLength" onclick="SaveOptions( false );">
+    </div>
+
+    <div class="container">
+        <div class="chboxl">Password Length:</div>
+        <div class="chboxr">
+            <select id="pgLength" onclick="SaveOptions( false );">
 			<optgroup label="Weak">				
 	  				 <option value="6">6</option>
 	  				 <option value="7">7</option>
@@ -206,36 +213,36 @@
     	  			   <option value="2048">2048</option>		   
 			</optgroup>
 			</select></div>
-            <br>
-            <div class="chboxl">Begin With Letters:</div>
-            <div class="chboxr"><label><input name="BeginWithC" id="BeginWithC" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
-            <div class="chboxl">Include Numbers:</div>
-            <div class="chboxr"><label><input name="Numbers" id="Numbers" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
-            <div class="chboxl">Include Lowercase:</div>
-            <div class="chboxr"><label><input name="Lowercase" id="Lowercase" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
-            <div class="chboxl">Include Uppercase:</div>
-            <div class="chboxr"><label><input name="Uppercase" id="Uppercase" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
-            <div class="chboxl">Include Symbols:</div>
-            <div class="chboxr"><label><input name="Symbols" id="Symbols" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
-            <div><input name="CustomizeSymbols" id="CustomizeSymbols" size="40" value="#$%&amp;'()*+,-./:;=?@[\]^_`{|}~" class="txt_options"
-                    onkeyup="SaveOptions( false );" type="text"></div>
-            <br>
-            <div class="chboxl">No Similar Characters:</div>
-            <div class="chboxr"><label><input name="Nosimilar" id="Nosimilar" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
-            <div class="chboxl">No Duplicate Characters:</div>
-            <div class="chboxr"><label><input name="AllUniqueC" id="AllUniqueC" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
-            <div class="chboxl">No Sequential Characters:</div>
-            <div class="chboxr"><label><input name="NoSeqC" id="NoSeqC" onclick="SaveOptions( false );" type="checkbox"></label></div>
-            <br>
+        <br>
+        <div class="chboxl">Begin With Letters:</div>
+        <div class="chboxr"><label><input name="BeginWithC" id="BeginWithC" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
+        <div class="chboxl">Include Numbers:</div>
+        <div class="chboxr"><label><input name="Numbers" id="Numbers" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
+        <div class="chboxl">Include Lowercase:</div>
+        <div class="chboxr"><label><input name="Lowercase" id="Lowercase" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
+        <div class="chboxl">Include Uppercase:</div>
+        <div class="chboxr"><label><input name="Uppercase" id="Uppercase" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
+        <div class="chboxl">Include Symbols:</div>
+        <div class="chboxr"><label><input name="Symbols" id="Symbols" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
+        <div><input name="CustomizeSymbols" id="CustomizeSymbols" size="40" value="#$%&amp;'()*+,-./:;=?@[\]^_`{|}~" class="txt_options"
+                onkeyup="SaveOptions( false );" type="text"></div>
+        <br>
+        <div class="chboxl">No Similar Characters:</div>
+        <div class="chboxr"><label><input name="Nosimilar" id="Nosimilar" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
+        <div class="chboxl">No Duplicate Characters:</div>
+        <div class="chboxr"><label><input name="AllUniqueC" id="AllUniqueC" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
+        <div class="chboxl">No Sequential Characters:</div>
+        <div class="chboxr"><label><input name="NoSeqC" id="NoSeqC" onclick="SaveOptions( false );" type="checkbox"></label></div>
+        <br>
 
-            <!-- <div class="chboxl">Auto Generate On The First Call:</div>
+        <!-- <div class="chboxl">Auto Generate On The First Call:</div>
             <div class="chboxr"><label>
                 <input 
                     name="AutoMake" 
@@ -245,9 +252,9 @@
                 ( generate passwords automatically when you open this page )
             </label></div> -->
 
-            <div class="chboxl">Quantity:</div>
-            <div class="chboxr">
-                <select id="pgQuantity" onclick="SaveOptions( false );">
+        <div class="chboxl">Quantity:</div>
+        <div class="chboxr">
+            <select id="pgQuantity" onclick="SaveOptions( false );">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -299,34 +306,34 @@
 				<option value="49">49</option>
 				<option value="50">50</option>
 			</select>
-            </div>
-            <br>
         </div>
-        <!-- sec_btn -->
-        <div id="sec_btn">
-            <div class="button GenerateBtn" onclick="doWork();">Generate Passwords </div>
+        <br>
+    </div>
+    <!-- sec_btn -->
+    <div id="sec_btn">
+        <div class="button GenerateBtn" onclick="doWork();">Generate Passwords </div>
+    </div>
+    <!-- sec_password -->
+    <div id="sec_password">
+        <div class="chboxl">
+            New Passwords Output:
         </div>
-        <!-- sec_password -->
-        <div id="sec_password">
-            <div class="chboxl">
-                New Passwords Output:
-            </div>
-            <div class="chboxr2">
-                <textarea id="final_pass" class="txt_password" value="New passwords will be displayed here." onclick="SelectAll('final_pass')"
-                    ;="" style="height: 40px;"></textarea>
-            </div>
+        <div class="chboxr2">
+            <textarea id="final_pass" class="txt_password" value="New passwords will be displayed here." onclick="SelectAll('final_pass')"
+                ;="" style="height: 40px;"></textarea>
         </div>
-        <!-- sec_blank -->
-        <div class="sec_blank"></div>
-        <!-- sec_btm -->
-        <div id="sec_btm">
-            <hr><br>
-            <p>© 2017 <a href="http://get-rekt.pw">GET-REKT.pw</a></p>
-			<button type="button" onClick="location.href='http://h8rt3rmin8r.com'">
+    </div>
+    <!-- sec_blank -->
+    <div class="sec_blank"></div>
+    <!-- sec_btm -->
+    <div id="sec_btm">
+        <hr><br>
+        <p>© 2017 <a href="http://get-rekt.pw">GET-REKT.pw</a></p>
+        <button type="button" onClick="location.href='http://h8rt3rmin8r.com'">
         <i>think outside the box</i></button>
-        </div>
+    </div>
 
-        <!-- <div style="clear:both"></div> -->
+    <!-- <div style="clear:both"></div> -->
 
 
     </div>
