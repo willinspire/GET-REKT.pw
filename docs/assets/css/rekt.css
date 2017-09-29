@@ -1,5 +1,5 @@
 h1 {
-    font-size: 280%;
+    font-size: 300%;
 }
 
 h2 {
@@ -12,7 +12,7 @@ p {
 
 textarea {
     width: 100%;
-    min-height: 50px;
+    min-height: 200px;
 }
 
 .badge {
@@ -39,13 +39,12 @@ textarea {
 }
 
 .txt_password {
-    height: 30px;
     font-family: "Courier New", Courier, monospace;
-    font-size: 14px;
+    font-size: 100%;
     color: #006633;
     padding: 0 0 0 3px;
 }
-
+/*
 .LoadSettingsDIV {
     display: inline;
     text-align: left;
@@ -53,3 +52,4 @@ textarea {
     padding: 0 0 0 4px;
     cursor: pointer;
 }
+*/
