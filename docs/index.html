@@ -50,35 +50,11 @@
 	<link rel="shortcut icon" href="http://get-rekt.pw/assets/media/favicon.png">
 
 	<!-- ****** STYLE ****** -->
-	<!-- <link href="http://get-rekt.pw/assets/css/rekt.css" rel="stylesheet" type="text/css"> -->
+	<link href="http://get-rekt.pw/assets/css/rekt.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
 	    crossorigin="anonymous">
-	<style>
-		.inner {
-			float: left;
-			width: 100px;
-			height: 50px;
-			margin: 20px;
-			background: #ccc;
-		}
 
-		.clearfix:before,
-		.clearfix:after {
-			content: "";
-			display: table;
-		}
-
-		.clearfix:after {
-			clear: both;
-		}
-	</style>
 	<!-- ****** JAVASCRIPT ****** -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	    crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-	    crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
-	    crossorigin="anonymous"></script>
 	<script src="http://get-rekt.pw/assets/js/rekt.js" language="javascript" type="text/javascript"></script>
 </head>
 
@@ -92,11 +68,11 @@
 
 	</div>
 
-	<div class="container">
-		<form>
-			<div class="form-group">
-				<label for="exampleFormControlSelect1">Number of characters</label>
-				<select class="form-control" id="pgLength" onclick="SaveOptions( false );">
+<div class="container">
+	<form>
+		<div class="form-group">
+			<label for="exampleFormControlSelect1">Number of characters</label>
+			<select class="form-control" id="pgLength" onclick="SaveOptions( false );">
 <optgroup label="Weak">
 	<option value="6">6</option>
 	<option value="7">7</option>
@@ -229,72 +205,126 @@
 	<option value="512">512</option>
 	<option value="1024">1024</option>
 	<option value="2048">2048</option>
-</optgroup>
-			</select></div>
-			<br>
-			<br>
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+</optgroup></select></div>
+		<br>
+		<div class="form-group">
+			<label for="exampleFormControlSelect1">Password output quantity</label>
+			<select class="form-control" id="pgQuantity" onclick="SaveOptions( false );">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+					<option value="13">13</option>
+					<option value="14">14</option>
+					<option value="15">15</option>
+					<option value="16">16</option>
+					<option value="17">17</option>
+					<option value="18">18</option>
+					<option value="19">19</option>		
+					<option value="20">20</option>
+					<option value="21">21</option>
+					<option value="22">22</option>
+					<option value="23">23</option>
+					<option value="24">24</option>
+					<option value="25">25</option>
+					<option value="26">26</option>
+					<option value="27">27</option>
+					<option value="28">28</option>
+					<option value="29">29</option>
+					<option value="30">30</option>
+					<option value="31">31</option>
+					<option value="32">32</option>
+					<option value="33">33</option>
+					<option value="34">34</option>
+					<option value="35">35</option>
+					<option value="36">36</option>
+					<option value="37">37</option>
+					<option value="38">38</option>
+					<option value="39">39</option>
+					<option value="40">40</option>
+					<option value="41">41</option>
+					<option value="42">42</option>
+					<option value="43">43</option>
+					<option value="44">44</option>
+					<option value="45">45</option>
+					<option value="46">46</option>
+					<option value="47">47</option>
+					<option value="48">48</option>
+					<option value="49">49</option>
+					<option value="50">50</option>
+				</select>
+		</div>
+		<br>
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="BeginWithC" name="BeginWithC" onclick="SaveOptions( false );"> Begin with alphabetic characters
 				  </label>
-				</div>
 			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 						<input class="form-check-input" type="checkbox" id="Numbers" name="Numbers" onclick="SaveOptions( false );"> Include numbers
 					  </label>
-				</div>
 			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="Lowercase" name="Lowercase" onclick="SaveOptions( false );"> Include lowercase letters
 				  </label>
-				</div>
 			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 						<input class="form-check-input" type="checkbox" id="Uppercase" name="Uppercase" onclick="SaveOptions( false );"> Include uppercase letters
 					  </label>
-				</div>
 			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="Symbols" name="Symbols" onclick="SaveOptions( false );"> Include symbols
 				  </label>
-				</div>
 			</div>
+		</div>
 
-			<div><input name="CustomizeSymbols" id="CustomizeSymbols" value="#$%&amp;'()*+,-./:;=?@[\]^_`{|}~" class="txt_options" onkeyup="SaveOptions( false );"
-				    type="text"></div>
+		<div><input name="CustomizeSymbols" id="CustomizeSymbols" value="#$%&amp;'()*+,-./:;=?@[\]^_`{|}~" class="txt_options" onkeyup="SaveOptions( false );"
+			    type="text"></div>
 
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 							<input class="form-check-input" type="checkbox" id="Nosimilar" name="Nosimilar" onclick="SaveOptions( false );"> Avoid similar characters
 						  </label>
-				</div>
 			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 								<input class="form-check-input" type="checkbox" id="AllUniqueC" name="AllUniqueC" onclick="SaveOptions( false );"> Avoid duplicate characters
 							  </label>
-				</div>
 			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<label class="form-check-label">
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="NoSeqC" name="NoSeqC" onclick="SaveOptions( false );"> Avoid sequential characters
 				</label>
-				</div>
 			</div>
+		</div>
 
-			<!-- <div class="chboxl">Auto Generate On The First Call:</div>
+		<!-- <div class="chboxl">Auto Generate On The First Call:</div>
             <div class="chboxr"><label>
                 <input 
                     name="AutoMake" 
@@ -303,63 +333,9 @@
                     type="checkbox">
                 ( generate passwords automatically when you open this page )
             </label></div> -->
-			<div class="form-group">
-				<label for="exampleFormControlSelect1">Password output quantity</label>
-				<select class="form-control" id="pgQuantity" onclick="SaveOptions( false );">
-				<option value="1">1</option>
-				<option value="2">2</option>
-				<option value="3">3</option>
-				<option value="4">4</option>
-				<option value="5">5</option>
-				<option value="6">6</option>
-				<option value="7">7</option>
-				<option value="8">8</option>
-				<option value="9">9</option>
-				<option value="10">10</option>
-				<option value="11">11</option>
-				<option value="12">12</option>
-				<option value="13">13</option>
-				<option value="14">14</option>
-				<option value="15">15</option>
-				<option value="16">16</option>
-				<option value="17">17</option>
-				<option value="18">18</option>
-				<option value="19">19</option>		
-				<option value="20">20</option>
-				<option value="21">21</option>
-				<option value="22">22</option>
-				<option value="23">23</option>
-				<option value="24">24</option>
-				<option value="25">25</option>
-				<option value="26">26</option>
-				<option value="27">27</option>
-				<option value="28">28</option>
-				<option value="29">29</option>
-				<option value="30">30</option>
-				<option value="31">31</option>
-				<option value="32">32</option>
-				<option value="33">33</option>
-				<option value="34">34</option>
-				<option value="35">35</option>
-				<option value="36">36</option>
-				<option value="37">37</option>
-				<option value="38">38</option>
-				<option value="39">39</option>
-				<option value="40">40</option>
-				<option value="41">41</option>
-				<option value="42">42</option>
-				<option value="43">43</option>
-				<option value="44">44</option>
-				<option value="45">45</option>
-				<option value="46">46</option>
-				<option value="47">47</option>
-				<option value="48">48</option>
-				<option value="49">49</option>
-				<option value="50">50</option>
-			</select>
-			</div>
-		</form>
-	</div>
+
+	</form>
+</div>
 	<br>
 	<hr>
 
@@ -376,12 +352,17 @@
 		<hr>
 		<div class="container">
 			<span class="text-muted">© 2017 <a href="http://get-rekt.pw">GET-REKT.pw  </a></span>
-			<span class="badge badge-info" onClick="location.href='http://h8rt3rmin8r.com'">think outside the box</span>
+			<span><a href="http://h8rt3rmin8r.com" class="badge badge-primary">think outside the box</a></span>
 		</div><br>
 
 	</footer>
-
-
+<!-- Bootstrap scripts added at the end to improve site performance -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+crossorigin="anonymous"></script>
 </body>
 
 </html>
