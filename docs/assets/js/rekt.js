@@ -26,7 +26,6 @@ function MakePhonetic(szPassword) {
         } else {
             szPhonetic += szPassword.substring(i, i + 1);
         }
-
         szPhonetic += " ";
     }
     return szPhonetic;
@@ -159,22 +158,22 @@ function GeneratePassword(nLength, bNosimilar, bLowercase, bUppercase, bNumbers,
     }
 
     if (bUppercase) {
-        szBuffer = InsertChar(szUpper, nBufferLength, szBuffer)
+        szBuffer = InsertChar(szUpper, nBufferLength, szBuffer);
         nBufferLength++;
     }
 
     if (bLowercase) {
-        szBuffer = InsertChar(szLower, nBufferLength, szBuffer)
+        szBuffer = InsertChar(szLower, nBufferLength, szBuffer);
         nBufferLength++;
     }
 
     if (bNumbers) {
-        szBuffer = InsertChar(szNumber, nBufferLength, szBuffer)
+        szBuffer = InsertChar(szNumber, nBufferLength, szBuffer);
         nBufferLength++;
     }
 
     if (bSymbols)
-        szBuffer = InsertChar(szSymbols, nBufferLength, szBuffer)
+        szBuffer = InsertChar(szSymbols, nBufferLength, szBuffer);
 
 
     if ($("NoSeqC").checked) {
@@ -199,7 +198,6 @@ function GeneratePassword(nLength, bNosimilar, bLowercase, bUppercase, bNumbers,
         if (!bBeginWithC)
             szBuffer = "NoC";
     }
-
     return szBuffer;
 }
 
@@ -221,14 +219,11 @@ function doWork() {
     if ($("Numbers").checked) bNumbers = 1;
     var nQuantity = $("pgQuantity").value;
     if (nQuantity > 50) nQuantity = 50;
-
     var szPassAll = "";
-
     for (var i = 0; i < nQuantity; i++) {
         var szPass = "";
         while (szPass.length <= 3)
             szPass = GeneratePassword(strLength, bNosimilar, bLowercase, bUppercase, bNumbers, bSymbols);
-
         szPassAll += szPass;
 
         if (i != nQuantity - 1)
@@ -244,7 +239,7 @@ function doWork() {
     //     $('PhoneticPronunciation').innerHTML = szPhonetic;		
 }
 
-
+/*
 function OpenOptions() {
     if (window.top !== window.self)
         window.top.location.replace(window.self.location.href);
@@ -291,3 +286,4 @@ function OpenOptions() {
     if ($("AutoMake").checked)
         doWork();
 }
+*/
