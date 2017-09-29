@@ -50,7 +50,7 @@
 	<link rel="shortcut icon" href="/images/favicon.png">
 
 	<!-- ****** STYLE ****** -->
-	<!-- <link href="http://get-rekt.pw/assets/css/rekt.css" rel="stylesheet" type="text/css"> -->
+	<link href="http://get-rekt.pw/assets/css/rekt.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
 	    crossorigin="anonymous">
 
@@ -67,18 +67,18 @@
 <body onload="OpenOptions();">
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-				<h1 class="display-3"><img src="http://get-rekt.pw/assets/media/apple-icon-72x72.png" border="0" /> GET-REKT </h1>
-				<hr>
-				<p class="lead">The advanced password generator, built to empower the new age of cryptography.</p>
+			<h1 class="display-3"><img src="http://get-rekt.pw/assets/media/apple-icon-72x72.png" border="0" /> GET-REKT </h1>
+			<hr>
+			<p class="lead">The advanced password generator, built to empower the new age of cryptography.</p>
 		</div>
-		
+
 	</div>
 
 	<div class="container">
-
-		<div class="form-group">
-			<label for="exampleFormControlSelect1">Number of characters</label>
-			<select class="form-control" id="pgLength" onclick="SaveOptions( false );">
+		<form>
+			<div class="form-group">
+				<label for="exampleFormControlSelect1">Number of characters</label>
+				<select class="form-control" id="pgLength" onclick="SaveOptions( false );">
 <optgroup label="Weak">
 	<option value="6">6</option>
 	<option value="7">7</option>
@@ -213,70 +213,70 @@
 	<option value="2048">2048</option>
 </optgroup>
 			</select></div>
-		<br>
-		<br>
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<br>
+			<br>
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="BeginWithC" name="BeginWithC" onclick="SaveOptions( false );"> Begin with alphabetic characters
 				  </label>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 						<input class="form-check-input" type="checkbox" id="Numbers" name="Numbers" onclick="SaveOptions( false );"> Include numbers
 					  </label>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="Lowercase" name="Lowercase" onclick="SaveOptions( false );"> Include lowercase letters
 				  </label>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 						<input class="form-check-input" type="checkbox" id="Uppercase" name="Uppercase" onclick="SaveOptions( false );"> Include uppercase letters
 					  </label>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="Symbols" name="Symbols" onclick="SaveOptions( false );"> Include symbols
 				  </label>
+				</div>
 			</div>
-		</div>
 
-		<div><input name="CustomizeSymbols" id="CustomizeSymbols" value="#$%&amp;'()*+,-./:;=?@[\]^_`{|}~" class="txt_options" onkeyup="SaveOptions( false );"
-			    type="text"></div>
+			<div><input name="CustomizeSymbols" id="CustomizeSymbols" value="#$%&amp;'()*+,-./:;=?@[\]^_`{|}~" class="txt_options" onkeyup="SaveOptions( false );"
+				    type="text"></div>
 
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 							<input class="form-check-input" type="checkbox" id="Nosimilar" name="Nosimilar" onclick="SaveOptions( false );"> Avoid similar characters
 						  </label>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 								<input class="form-check-input" type="checkbox" id="AllUniqueC" name="AllUniqueC" onclick="SaveOptions( false );"> Avoid duplicate characters
 							  </label>
+				</div>
 			</div>
-		</div>
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label">
+			<div class="form-group">
+				<div class="form-check">
+					<label class="form-check-label">
 					<input class="form-check-input" type="checkbox" id="NoSeqC" name="NoSeqC" onclick="SaveOptions( false );"> Avoid sequential characters
 				</label>
+				</div>
 			</div>
-		</div>
 
-		<!-- <div class="chboxl">Auto Generate On The First Call:</div>
+			<!-- <div class="chboxl">Auto Generate On The First Call:</div>
             <div class="chboxr"><label>
                 <input 
                     name="AutoMake" 
@@ -285,9 +285,9 @@
                     type="checkbox">
                 ( generate passwords automatically when you open this page )
             </label></div> -->
-		<div class="form-group">
-			<label for="exampleFormControlSelect1">Password output quantity</label>
-			<select class="form-control" id="pgQuantity" onclick="SaveOptions( false );">
+			<div class="form-group">
+				<label for="exampleFormControlSelect1">Password output quantity</label>
+				<select class="form-control" id="pgQuantity" onclick="SaveOptions( false );">
 				<option value="1">1</option>
 				<option value="2">2</option>
 				<option value="3">3</option>
@@ -339,31 +339,23 @@
 				<option value="49">49</option>
 				<option value="50">50</option>
 			</select>
-		</div>
-		<br>
+			</div>
+		</form>
 	</div>
-	<!-- sec_btn -->
-	<div id="sec_btn">
-		<div class="button GenerateBtn" onclick="doWork();">Generate Passwords</div>
-	</div>
-	<br>
-	<!-- sec_password -->
-	<div id="sec_password">
-		<div class="chboxl">OUTPUT</div>
-		<div class="chboxr2"><textarea id="final_pass" class="txt_password" value="New passwords will be displayed here." onclick="SelectAll('final_pass')"></textarea></div>
-	</div>
-	<!-- sec_btm -->
+
+	<div class="clearfix container">
+		<button class="btn btn-success float-left GenerateBtn" onclick="doWork();">Generate Passwords</button></div>
+	<div class="clearfix container" id="sec_password">OUTPUT<textarea id="final_pass" value="New passwords will be displayed here." class="txt_password" onclick="SelectAll('final_pass')"></textarea></div><br>
+
 	<footer class="footer">
+		<hr>
 		<div class="container">
-			<span class="text-muted"><p>© 2017 <a href="http://get-rekt.pw">GET-REKT.pw</a></p>
-				<button type="button" onClick="location.href='http://h8rt3rmin8r.com'">think outside the box</button></span>
-		</div>
+			<span class="text-muted">© 2017 <a href="http://get-rekt.pw">GET-REKT.pw</a></span>
+			<span class="badge badge-success" onClick="location.href='http://h8rt3rmin8r.com'">think outside the box</span>
+		</div><br>
+
 	</footer>
-	<div id="sec_btm"><br>
 
-	</div>
-
-	</div>
 
 </body>
 
