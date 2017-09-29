@@ -1,4 +1,4 @@
-
+        /*
         .container {
             margin: 15px auto;
             padding: 50px 30px 10px 30px;
@@ -7,6 +7,7 @@
             border-radius: 10px 10px;
             overflow: hidden;
         }
+        */
 
         #Logo {
             width: 80px;
@@ -18,7 +19,7 @@
             float: left;
             padding: 16px;
         }
-
+        /*
         #pgLength {
             float: left;
             font-size: 14px;
@@ -42,7 +43,7 @@
             margin: 0;
             padding: 0;
         }
-
+        */
         #header {
             height: 70px;
             float: left;
@@ -170,18 +171,6 @@
             -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
             box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
             border: 1px #f8f8f8 solid;
-        }
-
-        .button:hover {
-            border: 1px #dadada solid;
-        }
-
-        .GenerateBtn:active {
-            margin: 1px 4px 4px 221px;
-        }
-
-        .ProxyBtn:active {
-            margin: 1px 4px 4px 13px;
         }
 
         #div2top {
