@@ -1,140 +1,50 @@
+h1 {
+    font-size: 300%;
+}
 
-        #Logo {
-            width: 80px;
-            float: left;
-        }
+h2 {
+    font-size: 200%;
+}
 
-        #LogoText {
-            width: 450px;
-            float: left;
-            padding: 16px;
-        }
-        /*
-        .sec_blank {
-            float: left;
-            height: 1px;
-            width: 800px;
-            margin: 0 40px 0px 40px;
-            padding: 0px 10px 0px 10px;
-        }
+p {
+    font-size: 100%;
+}
 
-        #sec_options {
-            width: 800px;
-            float: left;
-            margin: 0 0 10px 0;
-            padding: 2px 50px 2px 50Px;
-        }
+.badge {
+    cursor: pointer;
+    padding: 0 0 0 4px;
+}
 
-        #sec_pron {
-            width: 900px;
-            height: 150px;
-            float: left;
-            margin: 15px 0px 20px 0px;
-        }
+.inner {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    background: #ccc;
+}
 
-        #sec_btn {
-            width: 800px;
-            margin: 0 0 0 0;
-            text-align: left;
-            padding: 0px 50px 5px 50px;
-            float: left;
-        }
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
 
-        #sec_password {
-            max-width: 800px;
-            margin: 10px 0 0 0;
-            text-align: left;
-            padding: 0px 50px 10px 50px;
-            float: left;
-        }
+.clearfix:after {
+    clear: both;
+}
 
-        #sec_btm {
-            float: left;
-            margin: 0px 0 60px 0;
-            padding: 20px 50px 10px 50px;
-            text-align: center;
-        }
+.txt_password {
+    height: 30px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 14px;
+    color: #006633;
+    padding: 0 0 0 3px;
+}
 
-        #sec_btm a,
-        #sec_btm a:link,
-        #sec_btm a:visited {
-            text-decoration: none;
-            color: #0E62E4;
-        }
-
-        #sec_btm a:hover {
-            text-decoration: underline;
-        }
-
-        */
-        p {
-            margin: 0;
-            padding: 0;
-            line-height: 27px;
-            text-indent: 0px;
-        }
-
-        .txt_password {
-            width: 400px;
-            height: 30px;
-            font-family: "Courier New", Courier, monospace;
-            font-size: 14px;
-            color: #008040;
-            padding: 0 0 0 5px;
-        }
-
-        .LoadSettingsDIV {
-            display: inline;
-            text-align: left;
-            float: left;
-            margin: 0;
-            padding: 0 0 0 4px;
-            height: 27px;
-            cursor: pointer;
-        }
-
-        .GenerateBtn {
-            margin: 0 5px 5px 220px;
-            padding: 0 0 0 0;
-            width: 185px;
-            height: 35px;
-            line-height: 35px;
-            font-size: 14px;
-        }
-        /*
-        .button {
-            float: left;
-            text-align: center;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -khtml-user-select: none;
-            -ms-user-select: none;
-            font-family: arial, sans-serif;
-            color: #555;
-            text-shadow: 1px 1px 0px white;
-            background: #ffffff;
-            background: -moz-linear-gradient(top, #ffffff 0%, #eee 100%);
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eee));
-            background: -webkit-linear-gradient(top, #ffffff 0%, #eee 100%);
-            background: -o-linear-gradient(top, #ffffff 0%, #eee 100%);
-            background: -ms-linear-gradient(top, #ffffff 0%, #eee 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f8f8f8', GradientType=0);
-            background: linear-gradient(top, #ffffff 0%, #eee 100%);
-            -moz-border-radius: 3px;
-            -webkit-border-radius: 3px;
-            border-radius: 3px;
-            -moz-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
-            -webkit-box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
-            box-shadow: 0 1px 3px 0px rgba(0, 0, 0, 0.4);
-            border: 1px #f8f8f8 solid;
-        }
-        */
-        #div2top {
-            width: 800px;
-            margin: 10px 20px 0px 20px;
-            float: left;
-            padding: 10px 30px 10px 30px;
-            cursor: pointer;
-            text-align: center;
-        }
+.LoadSettingsDIV {
+    display: inline;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 0 4px;
+    cursor: pointer;
+}
