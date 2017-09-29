@@ -41,19 +41,37 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-title" content="Material Design Lite">
-	<link rel="apple-touch-icon-precomposed" href="/images/apple-icon-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="http://get-rekt.pw/assets/media/apple-icon-precomposed.png">
 
 	<!-- Tile icon for Win8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="http://get-rekt.pw/assets/media/ms-icon-144x144.png">
 	<meta name="msapplication-TileColor" content="#3372DF">
 
-	<link rel="shortcut icon" href="/images/favicon.png">
+	<link rel="shortcut icon" href="http://get-rekt.pw/assets/media/favicon.png">
 
 	<!-- ****** STYLE ****** -->
 	<!-- <link href="http://get-rekt.pw/assets/css/rekt.css" rel="stylesheet" type="text/css"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
 	    crossorigin="anonymous">
+	<style>
+		.inner {
+			float: left;
+			width: 100px;
+			height: 50px;
+			margin: 20px;
+			background: #ccc;
+		}
 
+		.clearfix:before,
+		.clearfix:after {
+			content: "";
+			display: table;
+		}
+
+		.clearfix:after {
+			clear: both;
+		}
+	</style>
 	<!-- ****** JAVASCRIPT ****** -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	    crossorigin="anonymous"></script>
@@ -67,9 +85,9 @@
 <body onload="OpenOptions();">
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<h1 class="display-3"><img src="http://get-rekt.pw/assets/media/apple-icon-72x72.png" border="0" /> GET-REKT </h1>
+			<h2 class="display-3"><img src="http://get-rekt.pw/assets/media/apple-icon-72x72.png" border="0" /> GET-REKT </h2>
 			<hr>
-			<p class="lead">The advanced password generator, built to empower the new age of cryptography.</p>
+			<p class="lead">The advanced password generator, built to empower the emerging age of cryptography and digital assets.</p>
 		</div>
 
 	</div>
@@ -342,15 +360,17 @@
 			</div>
 		</form>
 	</div>
-<br><hr>
+	<br>
+	<hr>
 
-	
+
 	<div class="clearfix container" id="sec_password">
 		<span><h2>OUTPUT</h2></span>
 		<br>
 		<div class="container">
-				<button class="btn btn-success float-left GenerateBtn" onclick="doWork();">Generate Passwords</button></div><br>
-		<textarea id="final_pass" value="New passwords will be displayed here." class="txt_password" onclick="SelectAll('final_pass')" style="padding: 10px;"></textarea></div><br>
+			<button class="btn btn-success float-left GenerateBtn" onclick="doWork();">Generate Passwords</button></div><br>
+		<textarea id="final_pass" value="New passwords will be displayed here." class="txt_password" onclick="SelectAll('final_pass')"
+		    style="padding: 10px;"></textarea></div><br>
 
 	<footer class="footer">
 		<hr>
