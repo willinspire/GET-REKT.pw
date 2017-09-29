@@ -641,7 +641,6 @@
             OpenAOption("Uppercase");
             OpenAOption("Numbers");
             OpenAOption("Nosimilar");
-            /* OpenAOption( "SaveSettings" ); */
             OpenAOption("BeginWithC");
             OpenAOption("AllUniqueC");
             OpenAOption("NoSeqC");
@@ -680,45 +679,6 @@
             if ($("AutoMake").checked)
                 doWork();
         }
-
-        /*
-        function SaveOptions( bErase )
-        {
-        	var bSave = $("SaveSettings").checked;
-        	var ndays = 60;
-        	
-        	if( bSave )
-        	{		
-        		SaveAOption( "Symbols",  ndays );
-        		SaveAOption( "Lowercase",  ndays );				
-        		SaveAOption( "Uppercase",  ndays );
-        		SaveAOption( "Numbers",  ndays );
-        		SaveAOption( "Nosimilar",  ndays );						
-        		SaveAOption( "SaveSettings",  ndays );
-        		
-        		SaveAOption( "BeginWithC" );
-        		SaveAOption( "AllUniqueC" );
-        		SaveAOption( "NoSeqC" );
-        		SaveAOption( "AutoMake" );		
-        		
-        		
-        		var strCustomizeSymbols = $( "CustomizeSymbols" ).value;
-        		setCookie( "CustomizeSymbols", strCustomizeSymbols, ndays );		
-        		
-        		var nLength = $( "pgLength" ).value;
-        		setCookie( "pgLength", nLength, ndays );
-        		
-        		var nQuantity = $( "pgQuantity" ).value;
-        		setCookie( "pgQuantity", nQuantity, ndays );		
-        		
-        	}
-        	else
-        	{
-        		if( bErase )
-        			deleteAllCookies();
-        	}
-        }
-        */
     </script>
 </head>
 
@@ -726,7 +686,8 @@
     <div class="container">
         <div id="header">
             <div id="Logo">
-                <img src="http://get-rekt.pw/assets/media/apple-icon-72x72.png" border="0"></div>
+                <img src="http://get-rekt.pw/assets/media/apple-icon-72x72.png" border="0"/>
+		</div>
             <div id="LogoText">GET-REKT.pw</div>
         </div>
         <div id="sec_options">
@@ -881,12 +842,7 @@
 				<option value="50">50</option>
 			</select>
             </div>
-
-
-            <!-- <div class="chboxl">Save My Settings:</div>
-            <div class="chboxr"><label><input name="SaveSettings" id="SaveSettings" onclick="SaveOptions( true );" type="checkbox">( save all the settings above in cookies )</label></div> -->
-
-        </div>
+	</div>
 
         <div id="sec_btn">
             <div class="button GenerateBtn" onclick="doWork();">Generate Passwords </div>
@@ -910,7 +866,8 @@
 
 
         <div id="sec_btm">
-            <p>© 2017 <a href="http://get.rekt.pw">GET-REKT.pw</a></p>
+            <p>© 2017 <a href="http://get-rekt.pw">GET-REKT.pw</a></p><br>
+		<p><i>think outside the box</i></p>
         </div>
 
         <!-- <div style="clear:both"></div> -->
