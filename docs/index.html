@@ -385,14 +385,16 @@
 		<form>
 			<!-- <span><h2>OUTPUTS</h2></span><br> -->
 			<!-- FINAL CARD -->
-			<div class="card border-success mb-3" style="max-width: 75rem;">
+			<div class="card text-white bg-success mb-3" style="max-width: 75rem;">
 				<h4 class="card-header">OUTPUTS</h4>
 				<div class="card-body">
 					<!-- Opening of first section -->
 					<div class="form-group">
 						<!-- Sub heading description -->
 						<p class="card-text">Initiate the password generator sequence</p>
-						<button class="btn btn-success float-left GenerateBtn" onclick="doWork();">Generate Passwords</button></div><br>
+						<button class="btn btn-secondary float-left GenerateBtn" id="GenerateBtn" onclick="doWork();">Generate Passwords</button>
+					</div>
+					<br>
 					<div class="form-group">
 						<br>
 						<textarea id="final_pass" value="New passwords will be displayed here." class="txt_password" onclick="SelectAll('final_pass')"
